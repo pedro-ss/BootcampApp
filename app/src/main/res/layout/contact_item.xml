@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_photograph"
+            tools:src="@tools:sample/avatars"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_constraintBotton_toBottonOf="parent"
+            android:layout_constraintStart_toStartOf="parent"
+            android:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/fotografia_descricao" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            tools:text="Nome do contato"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_constraintStart_toEndOf="@+id/iv_photograph"
+            android:layout_constraintTop_toTopOf="@+id/iv_photograph"
+            android:text="Nome do contato"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_photograph" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            tools:text="(00) 9999-9999"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_constraintStart_toEndOf="@+id/iv_photograph"
+            android:layout_constraintTop_toTopOf="@+id/iv_photograph"
+            android:text="(00) 9999-9999"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
